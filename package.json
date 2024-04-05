@@ -7,7 +7,7 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\"",
-    "start": "nest start",
+    "start": "node dist/main",
     "start:tempo": "nest start",
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
