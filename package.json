@@ -5,10 +5,9 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "nest build",
+    "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
-    "start": "node dist/main",
-    "start:tempo": "nest start",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && npm run build",
